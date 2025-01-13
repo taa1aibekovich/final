@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3%5db^nneunw0jymxgkqzp85f13hsmg2b=z*x!@szrryn5p9)h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,8 +41,10 @@ INSTALLED_APPS = [
     'deep',
     'rest_framework',
     'django_filters',
+    'allauth',
+    'allauth.account'
     'allauth.socialaccount.providers.github',
-'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
